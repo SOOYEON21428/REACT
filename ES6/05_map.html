@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const arr=[10, 20, 30, 40];
+        //react에서는 return이 없으면 값이 나오지 않으므로 반드시 return을 써야한다. 
+        //반복문을 단순히 출력만을 위해 사용한다면 return이 없어도 된다.
+        arr.map((data, i) =>{
+            //console.log(i + ':' + data);
+            //return data;
+            return (console.log(i,data));
+        });
+        console.log('-----------------------')
+
+        const json=[
+            {id: 1, name:'홍길동', age: 25},
+            {id: 2, name:'어피치', age: 20},
+            {id: 3, name:'프로도', age: 35}
+        ];
+        json.map((data, i) =>{
+            //console.log(data.id, data.name, data.age);//console.log(data);
+            //return data;
+            return (console.log(i,data));
+        });
+        console.log('-----------------------')
+
+        //반복되는 문장이 1개면 {}생략가능. 이때는 return 생략해야함.
+        arr.map((data,i)=>console.log(data))
+        json.map( data=> console.log(data.name));
+        console.log('-----------------------')
+    </script>
+</body>
+</html>
+
+<!--
+    map(반복문)
+        배열.map((요소, 인덱스) => {
+            return 요소
+        });
+-->

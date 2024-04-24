@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function make1(){//구현
+            console.log('Have a nice day!')
+        }
+        make1()
+        //화살표 함수
+        const make11 = () => {
+            console.log('Have a nice day!')
+        }
+        make11()
+
+        function make2(x){
+            console.log(x+': Have a nice day!!')
+        }
+        const make22 = (x) => {
+            console.log(x+': Have a nice day!!')
+        }
+        make22(10)
+
+        function make3(x,y){
+            console.log(x + ' + ' + y + '= '+ (x+y))
+        }
+        const make33 =  (x,y) =>{
+            console.log(`${x} + ${y} = `+(x+y))
+        }
+        make33(10,20)
+
+    </script>
+</body>
+</html>
+
+<!--
+    1. 매개변수가 없을 경우
+        function(){} -> () => {}
+
+    2. 매개변수가 1개. 소괄호 생략 가능.
+        function(x){} -> (x) => {}
+
+    3. 매개변수가 복수. 소괄호 생략 불가능.
+        function(x,y){} -> (x,y) => {}
+-->

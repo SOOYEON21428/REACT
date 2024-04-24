@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const arr = ['고구마', '감자', '김치', '고기', '고단백', '참치', '가고', '가고가'];
+        //'고'자가 들어간 단어를 모두 출력. 없으면 -1 반환.
+        const result1 = arr.indexOf('고');
+        console.log(result1);//-1
+        
+        const result2 = arr.filter(data => data.indexOf('고') !== -1);
+        console.log(result2);
+        console.log('-----------------------')
+
+        const data =[
+            {text: '운동 해'}
+            ,{text: '수영 해'}
+            ,{text: '저녁 먹어'}
+            ,{text: '친구 만나'}
+            ,{text: '잠 자'}
+            ,{text: '공부 해'}
+        ]
+        const result3 = data.filter(item => item.text.indexOf('해') !== -1)
+        console.log(result3)
+        console.log('-----------------------')
+
+        const findText = 
+            (array, str, key) => array.filter(item => item[key].indexOf(str) !== -1);
+        console.log( findText(data ,'해', 'text') );
+    </script>
+</body>
+</html>
+<!--
+    객체 선언 시 {}문자 안에 원하는 값들을 넣어준다.
+        { 키 : 값 }
+-->
