@@ -1,6 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Test10 = () => {
+    const [data, setData] = useState([])
+    const [dto, setDto] = useState({
+        name: '',
+        age: ''
+    })
+    const {name, age} = dto
+        const onInput = (e) => {
+                const {name, value} = e.target
+                setDto ({
+                    ...dto,
+                    [name]:value
+                })
+
+        }
+
+    const onAdd = (e) => {
+        
+    }    
     return (
         <div>
             <form>
