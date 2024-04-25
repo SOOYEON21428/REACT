@@ -9,6 +9,7 @@ import Test7Main from './components/Test7Main';
 import Test8Gallery from './components/Test8Gallery';
 import Test9 from './components/Test9';
 import Test10 from './components/Test10';
+import Test11 from './components/Test11';
 const App = () => {
   
   return (
@@ -20,9 +21,10 @@ const App = () => {
      {/* <Test5 /> */}
      {/* <Test6 /> */}
      {/* <Test7Main /> */}
-     <Test8Gallery />
-     <Test9/>
-     <Test10/>
+     {/* <Test8Gallery /> */}
+     {/* <Test9/> */}
+     {/* <Test10/> */}
+     <Test11 />
     </div>
   );
 };
